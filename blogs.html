@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Blogs | Babin Joshi</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNCIgZmlsbD0iI0Y5NzMxNiIvPgo8cGF0aCBkPSJNOCA4VjI0SDE2VjE2SDI0VjhIOFoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-bg': '#fffbf5',
+                        'secondary-bg': '#fef7ed',
+                        'card': '#ffffff',
+                        'accent': '#F97316',
+                        'accent-hover': '#ea580c',
+                        'primary-text': '#1f2937',
+                        'secondary-text': '#6b7280',
+                        'heading': '#111827',
+                        'tag': '#fff7ed',
+                        'tag-text': '#9a3412'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-primary-bg text-primary-text">
+    <!-- Header -->
+    <header id="header" class="fixed w-full top-0 z-50 transition-all duration-300" style="background-color: rgba(255, 251, 245, 0.8); backdrop-filter: blur(5px);">
+        <div class="container mx-auto px-6 py-4">
+            <nav class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">B</span>
+                    </div>
+                    <span class="text-xl font-bold text-heading">Babin Joshi</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-primary-text hover:text-accent transition-colors">Home</a>
+                    <a href="index.html#about" class="text-primary-text hover:text-accent transition-colors">About</a>
+                    <a href="index.html#experience" class="text-primary-text hover:text-accent transition-colors">Experience</a>
+                    <a href="projects.html" class="text-primary-text hover:text-accent transition-colors">Projects</a>
+                    <a href="blogs.html" class="text-accent font-bold">Blogs</a>
+                    <a href="index.html#contact" class="text-primary-text hover:text-accent transition-colors">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </nav>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 p-4 bg-white rounded-lg shadow-lg">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="text-primary-text hover:text-accent transition-colors">Home</a>
+                    <a href="index.html#about" class="text-primary-text hover:text-accent transition-colors">About</a>
+                    <a href="index.html#experience" class="text-primary-text hover:text-accent transition-colors">Experience</a>
+                    <a href="projects.html" class="text-primary-text hover:text-accent transition-colors">Projects</a>
+                    <a href="blogs.html" class="text-accent font-bold">Blogs</a>
+                    <a href="index.html#contact" class="text-primary-text hover:text-accent transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-24">
+        <div class="container mx-auto px-6 py-8">
+            <!-- Page Header -->
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-bold text-heading mb-4">
+                    All <span class="text-accent">Blogs</span>
+                </h1>
+                <p class="text-lg text-secondary-text max-w-2xl mx-auto">
+                    Explore my thoughts on data engineering, machine learning, and technology insights
+                </p>
+            </div>
+
+            <!-- Blogs Grid -->
+            <div id="blogs" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                
+                <!-- Blog Post 1 -->
+                <div class="bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up">
+                    <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                        </svg>
+                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">Blog</span>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-lg font-bold text-heading mb-2 card-title">Getting Started with Data Engineering</h3>
+                        <p class="text-sm text-gray-600 mb-4 flex-grow">A comprehensive guide to starting your journey in data engineering, covering essential tools, technologies, and best practices for modern data pipelines.</p>
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xs text-gray-500">Jan 15, 2024</span>
+                            <a href="https://babin411.github.io" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors">
+                                Read More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up">
+                    <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-blue-500 to-teal-500 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                        </svg>
+                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">Notion</span>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-lg font-bold text-heading mb-2 card-title">Machine Learning Pipeline Best Practices</h3>
+                        <p class="text-sm text-gray-600 mb-4 flex-grow">Learn how to build robust and scalable machine learning pipelines with modern MLOps practices and tools.</p>
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xs text-gray-500">Dec 20, 2023</span>
+                            <a href="https://babin411.notion.site" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors">
+                                View Page
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up">
+                    <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                        </svg>
+                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">Tutorial</span>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-lg font-bold text-heading mb-2 card-title">Python for Data Analysis</h3>
+                        <p class="text-sm text-gray-600 mb-4 flex-grow">A comprehensive tutorial series covering Python libraries and techniques for effective data analysis and visualization.</p>
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xs text-gray-500">Nov 10, 2023</span>
+                            <a href="https://babin411.github.io" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors">
+                                Read More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 4 -->
+                <div class="bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up">
+                    <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M12 1v6m0 6v6"/>
+                            <path d="m21 12-6 0m-6 0-6 0"/>
+                        </svg>
+                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">Deep Learning</span>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-lg font-bold text-heading mb-2 card-title">Computer Vision with Deep Learning</h3>
+                        <p class="text-sm text-gray-600 mb-4 flex-grow">Exploring advanced computer vision techniques using deep learning frameworks and neural network architectures.</p>
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xs text-gray-500">Oct 5, 2023</span>
+                            <a href="https://babin411.github.io" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors">
+                                Read More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 5 -->
+                <div class="bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up">
+                    <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <circle cx="12" cy="12" r="4"/>
+                        </svg>
+                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">Cloud</span>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-lg font-bold text-heading mb-2 card-title">Cloud Data Architecture</h3>
+                        <p class="text-sm text-gray-600 mb-4 flex-grow">Designing scalable data architectures in the cloud with AWS, Azure, and GCP for modern data-driven applications.</p>
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xs text-gray-500">Sep 18, 2023</span>
+                            <a href="https://babin411.github.io" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors">
+                                Read More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 6 -->
+                <div class="bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up">
+                    <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-yellow-500 to-orange-500 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">Tips</span>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-lg font-bold text-heading mb-2 card-title">Data Quality and Validation</h3>
+                        <p class="text-sm text-gray-600 mb-4 flex-grow">Essential practices for ensuring data quality and implementing robust validation frameworks in data pipelines.</p>
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xs text-gray-500">Aug 25, 2023</span>
+                            <a href="https://babin411.github.io" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors">
+                                Read More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 7 -->
+                <div class="bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up">
+                    <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-red-500 to-pink-500 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">Tools</span>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-lg font-bold text-heading mb-2 card-title">Essential Data Engineering Tools</h3>
+                        <p class="text-sm text-gray-600 mb-4 flex-grow">A comprehensive overview of must-have tools and technologies for modern data engineering workflows.</p>
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xs text-gray-500">Jul 12, 2023</span>
+                            <a href="https://babin411.github.io" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors">
+                                Read More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 8 -->
+                <div class="bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up">
+                    <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-teal-500 to-green-500 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6"/>
+                            <line x1="8" y1="2" x2="8" y2="6"/>
+                            <line x1="3" y1="10" x2="21" y2="10"/>
+                        </svg>
+                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">Career</span>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-lg font-bold text-heading mb-2 card-title">Building a Data Engineering Career</h3>
+                        <p class="text-sm text-gray-600 mb-4 flex-grow">Personal insights and practical advice on building a successful career in data engineering and technology.</p>
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xs text-gray-500">Jun 28, 2023</span>
+                            <a href="https://babin411.github.io" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors">
+                                Read More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 9 -->
+                <div class="bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up">
+                    <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-gray-500 to-gray-700 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 12l2 2 4-4"/>
+                            <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"/>
+                            <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"/>
+                            <path d="M13 7h3a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-3"/>
+                            <path d="M11 17H8a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h3"/>
+                        </svg>
+                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">DevOps</span>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-lg font-bold text-heading mb-2 card-title">DataOps and MLOps Best Practices</h3>
+                        <p class="text-sm text-gray-600 mb-4 flex-grow">Implementing DevOps principles in data and machine learning workflows for better collaboration and reliability.</p>
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xs text-gray-500">May 15, 2023</span>
+                            <a href="https://babin411.github.io" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors">
+                                Read More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Back to Home Button -->
+            <div class="flex justify-center mt-12">
+                <a href="index.html" class="bg-accent hover:bg-accent-hover text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 shadow-lg shadow-orange-200 flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 18 9 12 15 6"/>
+                    </svg>
+                    Back to Home
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-bg py-8 mt-16">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6">
+                <a href="https://github.com/babin411" target="_blank" class="text-secondary-text hover:text-accent transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+                        <path d="M9 18c-4.51 2-5-2-7-2"/>
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/in/babin-joshi-339256222" target="_blank" class="text-secondary-text hover:text-accent transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                        <rect x="2" y="9" width="4" height="12"/>
+                        <circle cx="4" cy="4" r="2"/>
+                    </svg>
+                </a>
+                <a href="mailto:joshi.babin411@gmail.com" class="text-secondary-text hover:text-accent transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22 6 12 13 2 6"/>
+                    </svg>
+                </a>
+            </div>
+            <p class="text-sm text-secondary-text mt-6">&copy; 2024 Babin Joshi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Simple mobile menu toggle for this page
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            // Header scroll effect
+            const header = document.getElementById('header');
+            if (header) {
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 50) {
+                        header.classList.add('shadow-md');
+                        header.style.backgroundColor = 'rgba(255, 251, 245, 0.95)';
+                        header.style.backdropFilter = 'blur(10px)';
+                    } else {
+                        header.classList.remove('shadow-md');
+                        header.style.backgroundColor = 'rgba(255, 251, 245, 0.8)';
+                        header.style.backdropFilter = 'blur(5px)';
+                    }
+                });
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

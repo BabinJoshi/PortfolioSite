@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initFormHandling();
     initActiveNavigation();
     initBlogCarousel();
+    initProjectsCarousel();
     initAnimatedBackground();
     initTypingAnimation();
 });
@@ -884,4 +885,100 @@ function initTypingAnimation() {
     
     // Start typing after page loads
     setTimeout(typeWriter, 1000);
+}
+
+// Projects Carousel Functionality
+function initProjectsCarousel() {
+    const carousel = document.getElementById('projects-carousel');
+    const track = document.getElementById('projects-track');
+    const prevBtn = document.getElementById('projects-prev');
+    const nextBtn = document.getElementById('projects-next');
+    const indicatorsContainer = document.getElementById('projects-indicators');
+    
+    if (!carousel || !track || !prevBtn || !nextBtn) return;
+    
+    const cards = track.querySelectorAll('.project-card');
+    let currentIndex = 0;
+    let cardsPerView = 3;
+    
+    // Responsive cards per view
+    function updateCardsPerView() {
+        if (window.innerWidth < 768) {
+            cardsPerView = 1;
+        } else if (window.innerWidth < 1024) {
+            cardsPerView = 2;
+        } else {
+            cardsPerView = 3;
+        }
+        updateCarousel();
+        createIndicators();
+    }
+    
+    // Create indicators
+    function createIndicators() {
+        const totalSlides = Math.ceil(cards.length / cardsPerView);
+        indicatorsContainer.innerHTML = '';
+        
+        for (let i = 0; i < totalSlides; i++) {
+            const indicator = document.createElement('button');
+            indicator.classList.add('w-3', 'h-3', 'rounded-full', 'transition-all', 'duration-300');
+            indicator.classList.add(i === currentIndex ? 'bg-accent' : 'bg-gray-300');
+            indicator.addEventListener('click', () => goToSlide(i));
+            indicatorsContainer.appendChild(indicator);
+        }
+    }
+    
+    // Update carousel position
+    function updateCarousel() {
+        const cardWidth = 100 / cardsPerView;
+        const translateX = -(currentIndex * cardWidth);
+        track.style.transform = `translateX(${translateX}%)`;
+        
+        // Update indicators
+        const indicators = indicatorsContainer.querySelectorAll('button');
+        indicators.forEach((indicator, index) => {
+            indicator.classList.toggle('bg-accent', index === currentIndex);
+            indicator.classList.toggle('bg-gray-300', index !== currentIndex);
+        });
+    }
+    
+    // Go to specific slide
+    function goToSlide(index) {
+        const maxIndex = Math.ceil(cards.length / cardsPerView) - 1;
+        currentIndex = Math.max(0, Math.min(index, maxIndex));
+        updateCarousel();
+    }
+    
+    // Next slide
+    function nextSlide() {
+        const maxIndex = Math.ceil(cards.length / cardsPerView) - 1;
+        currentIndex = currentIndex >= maxIndex ? 0 : currentIndex + 1;
+        updateCarousel();
+    }
+    
+    // Previous slide
+    function prevSlide() {
+        const maxIndex = Math.ceil(cards.length / cardsPerView) - 1;
+        currentIndex = currentIndex <= 0 ? maxIndex : currentIndex - 1;
+        updateCarousel();
+    }
+    
+    // Event listeners
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+    
+    // Auto-play (optional) - less frequent than blogs
+    let autoPlay = setInterval(nextSlide, 7000);
+    
+    // Pause auto-play on hover
+    carousel.addEventListener('mouseenter', () => clearInterval(autoPlay));
+    carousel.addEventListener('mouseleave', () => {
+        autoPlay = setInterval(nextSlide, 7000);
+    });
+    
+    // Handle resize
+    window.addEventListener('resize', updateCardsPerView);
+    
+    // Initialize
+    updateCardsPerView();
 }
