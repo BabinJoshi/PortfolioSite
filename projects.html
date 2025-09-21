@@ -84,16 +84,41 @@
                 <h1 class="text-4xl md:text-5xl font-bold text-heading mb-4">
                     All <span class="text-accent">Projects</span>
                 </h1>
-                <p class="text-lg text-secondary-text max-w-2xl mx-auto">
+                <p class="text-lg text-secondary-text max-w-2xl mx-auto mb-8">
                     Explore my complete portfolio of machine learning, computer vision, and data engineering projects
                 </p>
+                
+                <!-- Category Filter Navigation -->
+                <div class="flex flex-wrap justify-center gap-3 mb-8">
+                    <button class="project-filter-btn active bg-accent text-white px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:bg-accent-hover" data-category="all">
+                        All
+                    </button>
+                    <button class="project-filter-btn bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:bg-accent hover:text-white" data-category="machine-learning">
+                        Machine Learning
+                    </button>
+                    <button class="project-filter-btn bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:bg-accent hover:text-white" data-category="computer-vision">
+                        Computer Vision
+                    </button>
+                    <button class="project-filter-btn bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:bg-accent hover:text-white" data-category="data-engineering">
+                        Data Engineering
+                    </button>
+                    <button class="project-filter-btn bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:bg-accent hover:text-white" data-category="web-development">
+                        Web Development
+                    </button>
+                    <button class="project-filter-btn bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:bg-accent hover:text-white" data-category="ai-nlp">
+                        AI/NLP
+                    </button>
+                    <button class="project-filter-btn bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:bg-accent hover:text-white" data-category="data-analytics">
+                        Data Analytics
+                    </button>
+                </div>
             </div>
 
             <!-- Projects Grid -->
             <div id="projects" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
                 
                 <!-- Project 1: Sandstone Image Segmentation -->
-                <div class="bg-card p-6 rounded-xl shadow-subtle card-hover flex flex-col slide-up">
+                <div class="project-post bg-card p-6 rounded-xl shadow-subtle card-hover flex flex-col slide-up" data-category="machine-learning">
                     <div class="flex-grow">
                         <div class="flex justify-between items-center mb-4">
                             <div class="bg-tag p-3 rounded-lg">
@@ -135,7 +160,7 @@
                 <!-- Project 2: Breakfast Scoop -->
 
                 <!-- Project 2 -->
-                <div class="bg-card p-6 rounded-xl shadow-subtle card-hover flex flex-col slide-up">
+                <div class="project-post bg-card p-6 rounded-xl shadow-subtle card-hover flex flex-col slide-up" data-category="machine-learning">
                     <div class="flex-grow">
                         <div class="flex justify-between items-center mb-4">
                             <div class="bg-tag p-3 rounded-lg">
@@ -176,7 +201,7 @@
                 </div>
 
                 <!-- Project 3: License Plate Detection -->
-                <div class="bg-card p-6 rounded-xl shadow-subtle card-hover flex flex-col slide-up">
+                <div class="project-post bg-card p-6 rounded-xl shadow-subtle card-hover flex flex-col slide-up" data-category="computer-vision">
                     <div class="flex-grow">
                         <div class="flex justify-between items-center mb-4">
                              <div class="bg-tag p-3 rounded-lg">
@@ -214,7 +239,7 @@
                 </div>
 
                 <!-- Project 4: AI Chatbot -->
-                <div class="bg-card p-6 rounded-xl shadow-subtle card-hover flex flex-col slide-up">
+                <div class="project-post bg-card p-6 rounded-xl shadow-subtle card-hover flex flex-col slide-up" data-category="ai-nlp">
                     <div class="flex-grow">
                         <div class="flex justify-between items-center mb-4">
                             <div class="bg-tag p-3 rounded-lg">
@@ -251,7 +276,7 @@
                 </div>
 
                 <!-- Project 5: Data Pipeline -->
-                <div class="bg-card p-6 rounded-xl shadow-subtle card-hover flex flex-col slide-up">
+                <div class="project-post bg-card p-6 rounded-xl shadow-subtle card-hover flex flex-col slide-up" data-category="data-engineering">
                     <div class="flex-grow">
                         <div class="flex justify-between items-center mb-4">
                             <div class="bg-tag p-3 rounded-lg">
@@ -292,7 +317,7 @@
                 </div>
 
                 <!-- Project 6: Portfolio Website -->
-                <div class="bg-card p-6 rounded-xl shadow-subtle card-hover flex flex-col slide-up">
+                <div class="project-post bg-card p-6 rounded-xl shadow-subtle card-hover flex flex-col slide-up" data-category="web-development">
                     <div class="flex-grow">
                         <div class="flex justify-between items-center mb-4">
                             <div class="bg-tag p-3 rounded-lg">
@@ -331,7 +356,7 @@
                 </div>
 
                 <!-- Additional Project 6 (example) -->
-                                <div class="bg-card p-6 rounded-xl shadow-subtle card-hover flex flex-col slide-up">
+                                <div class="project-post bg-card p-6 rounded-xl shadow-subtle card-hover flex flex-col slide-up" data-category="web-development">
                     <div class="flex-grow">
                         <div class="flex justify-between items-center mb-4">
                             <div class="bg-tag p-3 rounded-lg">
@@ -370,7 +395,7 @@
                 </div>
 
                 <!-- Additional Project 1: Data Visualization Dashboard -->
-                <div class="bg-card p-6 rounded-xl shadow-subtle card-hover flex flex-col slide-up">
+                <div class="project-post bg-card p-6 rounded-xl shadow-subtle card-hover flex flex-col slide-up" data-category="data-analytics">
                     <div class="flex-grow">
                         <div class="flex justify-between items-center mb-4">
                             <div class="bg-tag p-3 rounded-lg">
@@ -409,6 +434,80 @@
                 </div>
 
                 <!-- Additional Project 2: E-commerce API -->
+                <div class="project-post bg-card p-6 rounded-xl shadow-subtle card-hover flex flex-col slide-up" data-category="web-development">
+                    <div class="flex-grow">
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="bg-tag p-3 rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent">
+                                    <path d="M3 3v18h18"/>
+                                    <path d="M18.7 8a3 3 0 0 0-5.4 0"/>
+                                    <path d="M13.3 16a3 3 0 0 0 5.4 0"/>
+                                </svg>
+                            </div>
+                            <div class="bg-tag text-tag-text text-xs font-semibold px-2 py-1 rounded-full">Web Development</div>
+                        </div>
+                        <h3 class="text-xl font-bold text-heading mb-2 card-title">E-commerce REST API</h3>
+                        <p class="text-sm mb-4">Scalable e-commerce backend API with user authentication, product management, order processing, and payment integration using modern web technologies.</p>
+                        <div class="pt-4 border-t border-orange-100">
+                            <h4 class="font-semibold text-sm text-heading mb-2">Technologies Used:</h4>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                               <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">Node.js</span>
+                               <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">Express.js</span>
+                               <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">MongoDB</span>
+                               <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">JWT</span>
+                            </div>
+                            <h4 class="font-semibold text-sm text-heading mb-2">Key Features:</h4>
+                            <ul class="space-y-1 text-sm custom-bullets">
+                               <li>RESTful API design</li>
+                               <li>Secure authentication system</li>
+                               <li>Payment gateway integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-auto pt-6 text-center">
+                         <a href="#" class="inline-flex items-center gap-2 text-sm font-medium text-gray-600 border border-gray-300 rounded-lg px-4 py-2 hover:bg-gray-100 hover:text-accent transition-colors">
+                            <span>View Code</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Additional Project 3: Cloud Migration Tool -->
+                <div class="project-post bg-card p-6 rounded-xl shadow-subtle card-hover flex flex-col slide-up" data-category="data-engineering">
+                    <div class="flex-grow">
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="bg-tag p-3 rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent">
+                                    <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+                                </svg>
+                            </div>
+                            <div class="bg-tag text-tag-text text-xs font-semibold px-2 py-1 rounded-full">Data Engineering</div>
+                        </div>
+                        <h3 class="text-xl font-bold text-heading mb-2 card-title">Cloud Migration Automation Tool</h3>
+                        <p class="text-sm mb-4">Automated cloud migration tool for seamless data and application migration to AWS cloud infrastructure with minimal downtime and data validation.</p>
+                        <div class="pt-4 border-t border-orange-100">
+                            <h4 class="font-semibold text-sm text-heading mb-2">Technologies Used:</h4>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                               <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">AWS</span>
+                               <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">Terraform</span>
+                               <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">Python</span>
+                               <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">Docker</span>
+                            </div>
+                            <h4 class="font-semibold text-sm text-heading mb-2">Key Features:</h4>
+                            <ul class="space-y-1 text-sm custom-bullets">
+                               <li>Infrastructure as Code</li>
+                               <li>Automated data validation</li>
+                               <li>Zero-downtime migration</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-auto pt-6 text-center">
+                         <a href="#" class="inline-flex items-center gap-2 text-sm font-medium text-gray-600 border border-gray-300 rounded-lg px-4 py-2 hover:bg-gray-100 hover:text-accent transition-colors">
+                            <span>View Code</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                        </a>
+                    </div>
+                </div>
 
             </div>
 
@@ -487,6 +586,40 @@
                     }
                 });
             }
+
+            // Project filtering functionality
+            const filterButtons = document.querySelectorAll('.project-filter-btn');
+            const projectPosts = document.querySelectorAll('.project-post');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const category = button.getAttribute('data-category');
+                    
+                    // Update active button
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('active', 'bg-accent', 'text-white');
+                        btn.classList.add('bg-gray-100', 'text-gray-700');
+                    });
+                    button.classList.add('active', 'bg-accent', 'text-white');
+                    button.classList.remove('bg-gray-100', 'text-gray-700');
+                    
+                    // Filter projects with animation
+                    projectPosts.forEach(post => {
+                        if (category === 'all' || post.getAttribute('data-category') === category) {
+                            post.style.display = 'flex';
+                            // Trigger animation
+                            setTimeout(() => {
+                                post.classList.add('visible');
+                            }, 10);
+                        } else {
+                            post.classList.remove('visible');
+                            setTimeout(() => {
+                                post.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
         });
     </script>
     <script src="script.js"></script>
