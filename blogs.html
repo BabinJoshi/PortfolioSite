@@ -84,16 +84,44 @@
                 <h1 class="text-4xl md:text-5xl font-bold text-heading mb-4">
                     All <span class="text-accent">Blogs</span>
                 </h1>
-                <p class="text-lg text-secondary-text max-w-2xl mx-auto">
+                <p class="text-lg text-secondary-text max-w-2xl mx-auto mb-8">
                     Explore my thoughts on data engineering, machine learning, and technology insights
                 </p>
+                
+                <!-- Category Filter Navigation -->
+                <div class="flex flex-wrap justify-center gap-3 mb-8">
+                    <button class="blog-filter-btn active bg-accent text-white px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:bg-accent-hover" data-category="all">
+                        All
+                    </button>
+                    <button class="blog-filter-btn bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:bg-accent hover:text-white" data-category="data-engineering">
+                        Data Engineering
+                    </button>
+                    <button class="blog-filter-btn bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:bg-accent hover:text-white" data-category="machine-learning">
+                        Machine Learning
+                    </button>
+                    <button class="blog-filter-btn bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:bg-accent hover:text-white" data-category="sql">
+                        SQL
+                    </button>
+                    <button class="blog-filter-btn bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:bg-accent hover:text-white" data-category="python">
+                        Python
+                    </button>
+                    <button class="blog-filter-btn bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:bg-accent hover:text-white" data-category="cloud">
+                        Cloud
+                    </button>
+                    <button class="blog-filter-btn bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:bg-accent hover:text-white" data-category="career">
+                        Career
+                    </button>
+                    <button class="blog-filter-btn bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:bg-accent hover:text-white" data-category="notion">
+                        Notion Blogs
+                    </button>
+                </div>
             </div>
 
             <!-- Blogs Grid -->
             <div id="blogs" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
                 
                 <!-- Blog Post 1 -->
-                <div class="bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up">
+                <div class="blog-post bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up" data-category="data-engineering">
                     <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
@@ -119,13 +147,13 @@
                 </div>
 
                 <!-- Blog Post 2 -->
-                <div class="bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up">
+                <div class="blog-post bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up" data-category="machine-learning">
                     <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-blue-500 to-teal-500 flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
-                            <polyline points="14 2 14 8 20 8"/>
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
                         </svg>
-                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">Notion</span>
+                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">Blog</span>
                     </div>
                     <div class="p-6 flex-grow flex flex-col">
                         <h3 class="text-lg font-bold text-heading mb-2 card-title">Machine Learning Pipeline Best Practices</h3>
@@ -145,7 +173,7 @@
                 </div>
 
                 <!-- Blog Post 3 -->
-                <div class="bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up">
+                <div class="blog-post bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up" data-category="python">
                     <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
@@ -171,7 +199,7 @@
                 </div>
 
                 <!-- Blog Post 4 -->
-                <div class="bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up">
+                <div class="blog-post bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up" data-category="machine-learning">
                     <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="12" cy="12" r="3"/>
@@ -198,7 +226,7 @@
                 </div>
 
                 <!-- Blog Post 5 -->
-                <div class="bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up">
+                <div class="blog-post bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up" data-category="cloud">
                     <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
@@ -224,7 +252,7 @@
                 </div>
 
                 <!-- Blog Post 6 -->
-                <div class="bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up">
+                <div class="blog-post bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up" data-category="data-engineering">
                     <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-yellow-500 to-orange-500 flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
@@ -249,7 +277,7 @@
                 </div>
 
                 <!-- Blog Post 7 -->
-                <div class="bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up">
+                <div class="blog-post bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up" data-category="data-engineering">
                     <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-red-500 to-pink-500 flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
@@ -274,7 +302,7 @@
                 </div>
 
                 <!-- Blog Post 8 -->
-                <div class="bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up">
+                <div class="blog-post bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up" data-category="career">
                     <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-teal-500 to-green-500 flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
@@ -302,7 +330,7 @@
                 </div>
 
                 <!-- Blog Post 9 -->
-                <div class="bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up">
+                <div class="blog-post bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up" data-category="data-engineering">
                     <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-gray-500 to-gray-700 flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M9 12l2 2 4-4"/>
@@ -318,6 +346,82 @@
                         <p class="text-sm text-gray-600 mb-4 flex-grow">Implementing DevOps principles in data and machine learning workflows for better collaboration and reliability.</p>
                         <div class="flex items-center justify-between mt-auto">
                             <span class="text-xs text-gray-500">May 15, 2023</span>
+                            <a href="https://babin411.github.io" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors">
+                                Read More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 10 - SQL Category -->
+                <div class="blog-post bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up" data-category="sql">
+                    <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">SQL</span>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-lg font-bold text-heading mb-2 card-title">Advanced SQL Techniques for Data Analysis</h3>
+                        <p class="text-sm text-gray-600 mb-4 flex-grow">Mastering complex SQL queries, window functions, and optimization techniques for efficient data analysis and reporting.</p>
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xs text-gray-500">Apr 10, 2023</span>
+                            <a href="https://babin411.github.io" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors">
+                                Read More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 11 - Notion Category -->
+                <div class="blog-post bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up" data-category="notion">
+                    <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-gray-700 to-black flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                        </svg>
+                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">Notion</span>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-lg font-bold text-heading mb-2 card-title">My Data Engineering Journey</h3>
+                        <p class="text-sm text-gray-600 mb-4 flex-grow">Personal thoughts and experiences in my journey as a data engineer, including challenges, learnings, and career insights.</p>
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xs text-gray-500">Mar 22, 2023</span>
+                            <a href="https://babin411.notion.site" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors">
+                                View Page
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 12 - SQL Category -->
+                <div class="blog-post bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up" data-category="sql">
+                    <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">Performance</span>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-lg font-bold text-heading mb-2 card-title">SQL Performance Optimization</h3>
+                        <p class="text-sm text-gray-600 mb-4 flex-grow">Comprehensive guide to optimizing SQL queries for better performance, including indexing strategies and query plan analysis.</p>
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xs text-gray-500">Feb 15, 2023</span>
                             <a href="https://babin411.github.io" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors">
                                 Read More
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -400,6 +504,51 @@
                     }
                 });
             }
+
+            // Blog filtering functionality
+            const filterButtons = document.querySelectorAll('.blog-filter-btn');
+            const blogPosts = document.querySelectorAll('.blog-post');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const category = button.getAttribute('data-category');
+                    
+                    // Update active button
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('active', 'bg-accent', 'text-white');
+                        btn.classList.add('bg-gray-100', 'text-gray-700');
+                    });
+                    
+                    button.classList.remove('bg-gray-100', 'text-gray-700');
+                    button.classList.add('active', 'bg-accent', 'text-white');
+                    
+                    // Filter blog posts with animation
+                    blogPosts.forEach(post => {
+                        const postCategory = post.getAttribute('data-category');
+                        
+                        if (category === 'all' || postCategory === category) {
+                            post.style.display = 'block';
+                            post.style.opacity = '0';
+                            post.style.transform = 'translateY(20px)';
+                            
+                            // Animate in
+                            setTimeout(() => {
+                                post.style.transition = 'all 0.3s ease-out';
+                                post.style.opacity = '1';
+                                post.style.transform = 'translateY(0)';
+                            }, 100);
+                        } else {
+                            post.style.transition = 'all 0.3s ease-out';
+                            post.style.opacity = '0';
+                            post.style.transform = 'translateY(-20px)';
+                            
+                            setTimeout(() => {
+                                post.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
         });
     </script>
     <script src="script.js"></script>
