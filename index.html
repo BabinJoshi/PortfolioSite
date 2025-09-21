@@ -51,6 +51,7 @@
         <div class="container mx-auto px-4 max-w-7xl">
             <nav class="flex items-center justify-between h-20">
                 <!-- <a href="#" class="text-2xl font-bold text-accent">Portfolio</a> -->
+                 <a href="#" class="text-2xl font-bold text-accent"></a>
                 <ul class="hidden md:flex items-center space-x-8 text-primary-text font-medium">
                     <li><a href="#home" class="hover:text-accent transition-colors">Home</a></li>
                     <li><a href="#about" class="hover:text-accent transition-colors">About</a></li>
@@ -215,19 +216,22 @@
         <section id="experience" class="py-8">
             <h2 class="section-title">Work Experience</h2>
             <p class="section-subtitle">Professional journey in data engineering and machine learning</p>
-            <div class="max-w-3xl mx-auto space-y-12">
+            <div class="max-w-4xl mx-auto space-y-8">
+                
+                <!-- Data Engineer II -->
                 <div class="timeline">
                     <div class="timeline-item relative slide-up">
                         <div class="bg-card p-8 rounded-xl shadow-subtle card-hover">
-                            <div class="flex justify-between items-start mb-2">
+                            <div class="flex justify-between items-start mb-4">
                                 <div>
-                                    <h3 class="text-xl font-bold text-heading card-title">Data Engineer</h3>
+                                    <h3 class="text-xl font-bold text-heading card-title">Data Engineer II</h3>
                                     <p class="text-accent font-semibold text-lg">Fusemachines</p>
+                                    <!-- <p class="text-sm text-gray-600">Full-time · Kathmandu, Bāgmatī, Nepal · Hybrid</p> -->
                                 </div>
                                 <div class="text-sm text-gray-500 space-y-1">
                                     <p class="flex items-center justify-end gap-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-                                        <span>March 2022 - Present</span>
+                                        <span>Jan 2025 - Present</span>
                                     </p>
                                     <p class="flex items-center justify-end gap-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -235,49 +239,291 @@
                                     </p>
                                 </div>
                             </div>
-                            <p class="text-gray-500 mb-4">Played pivotal role on  data engineering initiatives with focus on cloud migration and cost optimization.</p>
-                            <h4 class="font-semibold mb-3 text-heading">Key Achievements:</h4>
-                            <ul class="space-y-2 text-gray-500 custom-bullets">
-                                <li class="leading-relaxed"><strong>Cloud Migration & Cost Optimization:</strong> Played a pivotal role in the migration of data solutions from Azure Synapse to Databricks, implementing the Medallion Architecture (bronze, silver, gold). Reduced monthly costs by 50% and peak costs by 80%.</li>
-                                <li class="leading-relaxed"><strong>ETL Framework Development:</strong> Extracted and ingested data from APIs, Google Sheets, MongoDB, and Hubspot; automated data pipelines using Azure Data Factory and implemented metadata-driven design patterns.</li>
-                                <li class="leading-relaxed"><strong>Data Instructor & Trainer:</strong> Conducted training sessions on SQL, Azure technologies, Apache Kafka, and MongoDB. Mentored new data engineering trainees on advanced analytics topics and practical implementation techniques.</li>
-                            </ul>
+                            
+                            <div class="space-y-6">
+                                <div>
+                                    <h4 class="font-bold text-lg text-heading mb-3">Legacy System Assessment & Migration Strategy</h4>
+                                    <ul class="space-y-2 text-gray-600 custom-bullets pl-4">
+                                        <li>Assessed a client's legacy system and prepared comprehensive project documentation and strategic plan for migrating from Oracle to Databricks</li>
+                                        <li>Developed documentation for SDLC, Data Governance, Data Quality, Naming Conventions, and full migration plan</li>
+                                    </ul>
+                                </div>
+                                
+                                <div>
+                                    <h4 class="font-bold text-lg text-heading mb-3">End-to-End Fraud Detection Pipeline</h4>
+                                    <ul class="space-y-2 text-gray-600 custom-bullets pl-4">
+                                        <li>Built a complete data pipeline and orchestration system for fraud detection using AWS Boto3 to extract data from Amazon Redshift and store in Amazon S3</li>
+                                        <li>Cleansed and feature-engineered raw data using scikit-learn, feeding processed features and daily context into machine learning models</li>
+                                        <li>Developed a FastAPI backend API to deliver model results and orchestrated the entire flow using Apache Airflow</li>
+                                    </ul>
+                                </div>
+                                
+                                <div>
+                                    <h4 class="font-bold text-lg text-heading mb-3">Database Agent Development & Validation</h4>
+                                    <ul class="space-y-2 text-gray-600 custom-bullets pl-4">
+                                        <li>Contributed to the data pipeline for a RAG-based LLM agent that translates natural language queries into SQL</li>
+                                        <li>Validated the accuracy of agent-generated SQL queries against benchmark queries, ensuring system reliability</li>
+                                        <li>Generated a comprehensive set of benchmark queries to facilitate ongoing accuracy testing and performance evaluation</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                 <div class="timeline">
+
+                <!-- Data Engineer I -->
+                <div class="timeline">
                     <div class="timeline-item relative slide-up">
-                         <div class="bg-card p-8 rounded-xl shadow-subtle card-hover">
-                             <div class="flex justify-between items-start">
-                                 <div>
-                                    <h3 class="text-xl font-bold text-heading card-title">Machine Learning Intern</h3>
+                        <div class="bg-card p-8 rounded-xl shadow-subtle card-hover">
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h3 class="text-xl font-bold text-heading card-title">Data Engineer I</h3>
                                     <p class="text-accent font-semibold text-lg">Fusemachines</p>
-                                 </div>
-                                 <div class="text-sm text-gray-500 space-y-1">
+                                </div>
+                                <div class="text-sm text-gray-500 space-y-1">
                                     <p class="flex items-center justify-end gap-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-                                        <span>December 2021 - March 2022</span>
+                                        <span>Jan 2024 - Dec 2024</span>
                                     </p>
-                                     <p class="flex items-center justify-end gap-2">
+                                    <p class="flex items-center justify-end gap-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
                                         <span>Kathmandu, Nepal</span>
                                     </p>
-                                 </div>
-                             </div>
-                             <p class="text-gray-500 mb-4">Played pivotal role on  data engineering initiatives with focus on cloud migration and cost optimization.</p>
-                            <h4 class="font-semibold mb-3 text-heading">Key Achievements:</h4>
-                            <ul class="space-y-2 text-gray-500 custom-bullets">
-                                <li class="leading-relaxed">Performed EDA, outlier handling, and feature selection on various datasets. Implemented ML algorithms
-                                    and prepared detailed notebook documentation.</li>
-                                <li class="leading-relaxed">Trained multiple ML algorithms (KNN, Logistic Regression, Random Forest, etc.) for stroke prediction,
-                                    emotion classification, and credit risk analysis. Conducted hyperparameter tuning and built basic UIs using
-                                    Streamlit and Gradio.</li>
-                                <li class="leading-relaxed">Built a chatbot using Rasa for weather information. Created a blog site using Ruby and Jekyll, and deployed
-                                    it on GitHub Pages.</li>
-                            </ul>
-                         </div>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-6">
+                                <div>
+                                    <h4 class="font-bold text-lg text-heading mb-3">Training & Mentorship</h4>
+                                    <ul class="space-y-2 text-gray-600 custom-bullets pl-4">
+                                        <li>Mentored trainees on key data technologies, including SQL, Spark, and Azure services like ADLS Gen2, Data Factory, and Synapse</li>
+                                    </ul>
+                                </div>
+                                
+                                <div>
+                                    <h4 class="font-bold text-lg text-heading mb-3">Data Platform Migration & Optimization</h4>
+                                    <ul class="space-y-2 text-gray-600 custom-bullets pl-4">
+                                        <li>Supported migration from Azure Synapse to Databricks, achieving <strong>90.67% monthly cost reduction</strong> (from $75k to $7k) and <strong>85% peak cost reduction</strong> (from $100k to $15k)</li>
+                                        <li>Implemented the Medallion Architecture to standardize data processing, creating structured flow from raw (bronze) to cleaned (silver) and final metric (gold) layers</li>
+                                        <li>Simplified complex business logic from legacy code through reverse engineering and reduced data duplication by consolidating logic into reusable intermediate tables</li>
+                                        <li>Automated pipeline triggers using Terraform scripts and established robust alerts and notifications for pipeline failures, integrating with Slack and PagerDuty</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                 </div>
+                </div>
+
+                <!-- Associate Data Engineer -->
+                <div class="timeline">
+                    <div class="timeline-item relative slide-up">
+                        <div class="bg-card p-8 rounded-xl shadow-subtle card-hover">
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h3 class="text-xl font-bold text-heading card-title">Associate Data Engineer</h3>
+                                    <p class="text-accent font-semibold text-lg">Fusemachines</p>
+                                    
+                                </div>
+                                <div class="text-sm text-gray-500 space-y-1">
+                                    <p class="flex items-center justify-end gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                                        <span>Dec 2022 - Dec 2023</span>
+                                    </p>
+                                    <p class="flex items-center justify-end gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                        <span>Kathmandu, Nepal</span>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                    
+                            
+                            <div class="space-y-6">
+                                <div>
+                                    <h4 class="font-bold text-lg text-heading mb-3">Data Pipeline Development & ETL</h4>
+                                    <ul class="space-y-2 text-gray-600 custom-bullets pl-4">
+                                        <li>Orchestrated end-to-end data ingestion from diverse sources including APIs, MongoDB, HubSpot, and Google Sheets using tools like Airbyte</li>
+                                        <li>Developed and optimized ETL processes using AWS Glue, leveraging Glue Data Catalog Tables to transform raw data and generate business-specific metrics</li>
+                                        <li>Engineered Python and PySpark scripts on Azure Databricks to extract complex hierarchical data from project management platforms and transform raw JSON into structured formats (CSV and Parquet)</li>
+                                        <li>Architected and implemented Delta Tables using PySpark in Azure, enhancing data querying and management for efficient analysis and reporting</li>
+                                    </ul>
+                                </div>
+                                
+                                <div>
+                                    <h4 class="font-bold text-lg text-heading mb-3">Cloud Data Management & Analytics</h4>
+                                    <ul class="space-y-2 text-gray-600 custom-bullets pl-4">
+                                        <li>Integrated S3 buckets with Amazon Athena to enable efficient ad-hoc querying</li>
+                                        <li>Linked Athena databases to Apache Superset to create comprehensive, interactive dashboards for visualizing key metrics and providing real-time data insights</li>
+                                        <li>Utilized AWS Glue Data Catalog to efficiently manage metadata for files and folders within S3 buckets, centralizing data discovery and governance</li>
+                                    </ul>
+                                </div>
+                                
+                                <div>
+                                    <h4 class="font-bold text-lg text-heading mb-3">Data Governance & Integrity</h4>
+                                    <ul class="space-y-2 text-gray-600 custom-bullets pl-4">
+                                        <li>Implemented robust data validation processes using Spark to compare data between Azure SQL databases and ADLS Gen2 files, ensuring data integrity and consistency across platforms</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-6 pt-4 border-t border-gray-200">
+                                <h4 class="font-semibold text-sm text-heading mb-2">Key Technologies:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">Azure Data Lake</span>
+                                    <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">AWS S3</span>
+                                    <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">Azure Data Factory</span>
+                                    <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">AWS Glue</span>
+                                    <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">Azure Databricks</span>
+                                    <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">Amazon RDS</span>
+                                    <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">Apache Airflow</span>
+                                    <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">AWS Lambda</span>
+                                    <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">Azure Synapse Analytics</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Engineer Associate Trainee -->
+                <div class="timeline">
+                    <div class="timeline-item relative slide-up">
+                        <div class="bg-card p-8 rounded-xl shadow-subtle card-hover">
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h3 class="text-xl font-bold text-heading card-title">Data Engineer Associate Trainee</h3>
+                                    <p class="text-accent font-semibold text-lg">Fusemachines</p>
+                                    
+                                </div>
+                                <div class="text-sm text-gray-500 space-y-1">
+                                    <p class="flex items-center justify-end gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                                        <span>May 2022 - Dec 2022</span>
+                                    </p>
+                                    <p class="flex items-center justify-end gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                        <span>Kathmandu, Nepal</span>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="space-y-6">
+                                <div>
+                                    <h4 class="font-bold text-lg text-heading mb-3">Data Engineering & ETL 👨‍💻</h4>
+                                    <ul class="space-y-2 text-gray-600 custom-bullets pl-4">
+                                        <li>Engineered an end-to-end ETL framework to process and integrate data from various Google Sheets into Google BigQuery, creating a reliable data pipeline for business analysis and reporting</li>
+                                        <li>Transformed raw data into actionable business-specific metrics and insights, ensuring data accuracy and meeting all project requirements</li>
+                                        <li>Developed a comprehensive dashboard using Apache Superset for real-time monitoring and effective data visualization, empowering stakeholders with key business insights</li>
+                                    </ul>
+                                </div>
+                                
+                                <div>
+                                    <h4 class="font-bold text-lg text-heading mb-3">Training & Mentorship 🧑‍🏫</h4>
+                                    <ul class="space-y-2 text-gray-600 custom-bullets pl-4">
+                                        <li>Instructed new data engineering trainees on fundamental concepts of Data Structures and Algorithms, laying a strong technical foundation</li>
+                                        <li>Provided training sessions on Apache Kafka, covering its architecture, core principles, and the use of Kafka Connect for efficient data streaming</li>
+                                        <li>Taught trainees about NoSQL databases, focusing on MongoDB to expand their knowledge of data storage solutions</li>
+                                    </ul>
+                                </div>
+                                
+                                <div>
+                                    <h4 class="font-bold text-lg text-heading mb-3">Certifications & Skills 🏆</h4>
+                                    <ul class="space-y-2 text-gray-600 custom-bullets pl-4">
+                                        <li>Successfully obtained the Apache Spark 3.0 certification in Python, validating expertise in key data processing technology</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-6 pt-4 border-t border-gray-200">
+                                <h4 class="font-semibold text-sm text-heading mb-2">Key Technologies:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">Pandas</span>
+                                    <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">Apache Spark</span>
+                                    <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">MySQL</span>
+                                    <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">dbt</span>
+                                    <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">Apache Kafka</span>
+                                    <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">Python</span>
+                                    <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">Docker</span>
+                                    <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">Snowflake</span>
+                                    <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">MongoDB</span>
+                                    <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">Apache Airflow</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Machine Learning Intern -->
+                <div class="timeline">
+                    <div class="timeline-item relative slide-up">
+                        <div class="bg-card p-8 rounded-xl shadow-subtle card-hover">
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h3 class="text-xl font-bold text-heading card-title">Machine Learning Intern</h3>
+                                    <p class="text-accent font-semibold text-lg">Fusemachines</p>
+                                    <!-- <p class="text-sm text-gray-600">Internship · Kathmandu, Bāgmatī, Nepal</p> -->
+                                </div>
+                                <div class="text-sm text-gray-500 space-y-1">
+                                    <p class="flex items-center justify-end gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                                        <span>Dec 2021 - Mar 2022</span>
+                                    </p>
+                                    <p class="flex items-center justify-end gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                        <span>Kathmandu, Nepal</span>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="space-y-6">
+                                <div>
+                                    <h4 class="font-bold text-lg text-heading mb-3">Data Science & Machine Learning</h4>
+                                    <ul class="space-y-2 text-gray-600 custom-bullets pl-4">
+                                        <li>Engineered a comprehensive machine learning pipeline for Stroke Prediction project, performing EDA, feature engineering, and hyperparameter tuning to train and optimize 10 different algorithms</li>
+                                        <li>Executed an emotion classification project using LSTMs, deploying the model with a user-friendly interface built using Gradio</li>
+                                        <li>Compiled comprehensive documentation notebooks covering exploratory data analysis, feature engineering, feature selection, outlier handling, and various algorithms including k-NN, Logistic Regression, SVM, Naive Bayes, PCA, and ensemble methods</li>
+                                    </ul>
+                                </div>
+                                
+                                <div>
+                                    <h4 class="font-bold text-lg text-heading mb-3">Software Development & MLOps</h4>
+                                    <ul class="space-y-2 text-gray-600 custom-bullets pl-4">
+                                        <li>Architected and implemented a Library Management System, initially as a command-line application, and later as a full-stack solution using FastAPI, MySQL, and MongoDB</li>
+                                        <li>Built a basic web scraper using Scrapy to automate data collection for internal projects</li>
+                                        <li>Acquired foundational knowledge of computer vision techniques using OpenCV and basic deep learning concepts with PyTorch and TensorFlow</li>
+                                    </ul>
+                                </div>
+                                
+                                <div>
+                                    <h4 class="font-bold text-lg text-heading mb-3">Other Skills & Tools</h4>
+                                    <ul class="space-y-2 text-gray-600 custom-bullets pl-4">
+                                        <li>Built a basic chatbot using the Rasa framework that provides real-time weather information for specified locations</li>
+                                        <li>Applied software development best practices, including unit testing with unittest and pytest, to ensure code quality and reliability</li>
+                                        <li>Created and deployed a personal blog site using Ruby and Jekyll on GitHub Pages, showcasing a blend of technical and content creation skills</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-6 pt-4 border-t border-gray-200">
+                                <h4 class="font-semibold text-sm text-heading mb-2">Key Technologies:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">Pandas</span>
+                                    <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">Seaborn</span>
+                                    <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">TensorFlow</span>
+                                    <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">Scikit-Learn</span>
+                                    <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">NumPy</span>
+                                    <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">Streamlit</span>
+                                    <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">Matplotlib</span>
+                                    <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">Rasa</span>
+                                    <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">Python</span>
+                                    <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">Scrapy</span>
+                                    <span class="bg-orange-50 text-gray-600 text-xs font-medium px-2 py-1 rounded">Plotly</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -313,7 +559,7 @@
                         </div>
                     </div>
                     <div class="mt-auto pt-6 text-center">
-                         <a href="#" class="inline-flex items-center gap-2 text-sm font-medium text-gray-600 border border-gray-300 rounded-lg px-4 py-2 hover:bg-gray-100 hover:text-accent transition-colors">
+                         <a href="https://github.com/utsavdarlami/sandstone_segmentation" class="inline-flex items-center gap-2 text-sm font-medium text-gray-600 border border-gray-300 rounded-lg px-4 py-2 hover:bg-gray-100 hover:text-accent transition-colors">
                             <span>Code</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
                         </a>
@@ -345,7 +591,7 @@
                         </div>
                     </div>
                     <div class="mt-auto pt-6 text-center">
-                         <a href="#" class="inline-flex items-center gap-2 text-sm font-medium text-gray-600 border border-gray-300 rounded-lg px-4 py-2 hover:bg-gray-100 hover:text-accent transition-colors">
+                         <a href="https://github.com/utsavdarlami/BreakfastScoop" class="inline-flex items-center gap-2 text-sm font-medium text-gray-600 border border-gray-300 rounded-lg px-4 py-2 hover:bg-gray-100 hover:text-accent transition-colors">
                             <span>Code</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
                         </a>
@@ -377,7 +623,7 @@
                         </div>
                     </div>
                      <div class="mt-auto pt-6 text-center">
-                         <a href="#" class="inline-flex items-center gap-2 text-sm font-medium text-gray-600 border border-gray-300 rounded-lg px-4 py-2 hover:bg-gray-100 hover:text-accent transition-colors">
+                         <a href="https://github.com/utsavdarlami/NepalLicensePlateRecognition" class="inline-flex items-center gap-2 text-sm font-medium text-gray-600 border border-gray-300 rounded-lg px-4 py-2 hover:bg-gray-100 hover:text-accent transition-colors">
                             <span>Code</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
                         </a>
