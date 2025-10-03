@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initActiveNavigation();
     initBlogCarousel();
     initProjectsCarousel();
-    initAnimatedBackground();
+    // initAnimatedBackground();
     initTypingAnimation();
 });
 // Mobile Menu Toggle

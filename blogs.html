@@ -105,11 +105,11 @@
                     <button class="blog-filter-btn bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:bg-accent hover:text-white" data-category="python">
                         Python
                     </button>
-                    <button class="blog-filter-btn bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:bg-accent hover:text-white" data-category="cloud">
-                        Cloud
+                    <button class="blog-filter-btn bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:bg-accent hover:text-white" data-category="aws">
+                        AWS
                     </button>
-                    <button class="blog-filter-btn bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:bg-accent hover:text-white" data-category="career">
-                        Career
+                    <button class="blog-filter-btn bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:bg-accent hover:text-white" data-category="azure">
+                        Azure
                     </button>
                     <button class="blog-filter-btn bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:bg-accent hover:text-white" data-category="notion">
                         Notion Blogs
@@ -127,11 +127,11 @@
                             <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
                             <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
                         </svg>
-                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">Blog</span>
+                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">Data Engineering</span>
                     </div>
                     <div class="p-6 flex-grow flex flex-col">
-                        <h3 class="text-lg font-bold text-heading mb-2 card-title">Getting Started with Data Engineering</h3>
-                        <p class="text-sm text-gray-600 mb-4 flex-grow">A comprehensive guide to starting your journey in data engineering, covering essential tools, technologies, and best practices for modern data pipelines.</p>
+                        <h3 class="text-lg font-bold text-heading mb-2 card-title">Datawarehouse Theory</h3>
+                        <p class="text-sm text-gray-600 mb-4 flex-grow">A data warehouse is a centralized system that stores integrated, historical data from multiple sources, designed for analysis and reporting. It is subject-oriented, time-variant, non-volatile, and supports schemas like star and snowflake for efficient decision-making.</p>
                         <div class="flex items-center justify-between mt-auto">
                             <span class="text-xs text-gray-500">Jan 15, 2024</span>
                             <a href="https://babin411.github.io" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors">
@@ -146,6 +146,34 @@
                     </div>
                 </div>
 
+
+                <div class="blog-post bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up" data-category="data-engineering">
+                    <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                        </svg>
+                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">Data Engineering</span>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-lg font-bold text-heading mb-2 card-title">Parquet vs Avro vs Optimized Row Columnar(ORC)</h3>
+                        <p class="text-sm text-gray-600 mb-4 flex-grow">Parquet, Avro, and ORC are all columnar storage file formats optimized for big data processing. Parquet is known for its efficient compression and encoding schemes, making it suitable for complex data types. Avro, on the other hand, is a row-based format that excels in schema evolution and is often used with Apache Kafka. ORC is designed for high-performance queries in Hadoop ecosystems, providing efficient storage and fast read access.</p>
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xs text-gray-500">Jan 15, 2024</span>
+                            <a href="https://babin411.github.io" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors">
+                                Read More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
                 <!-- Blog Post 2 -->
                 <div class="blog-post bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up" data-category="machine-learning">
                     <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-blue-500 to-teal-500 flex items-center justify-center">
@@ -153,14 +181,14 @@
                             <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
                             <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
                         </svg>
-                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">Blog</span>
+                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">CNN</span>
                     </div>
                     <div class="p-6 flex-grow flex flex-col">
-                        <h3 class="text-lg font-bold text-heading mb-2 card-title">Machine Learning Pipeline Best Practices</h3>
-                        <p class="text-sm text-gray-600 mb-4 flex-grow">Learn how to build robust and scalable machine learning pipelines with modern MLOps practices and tools.</p>
+                        <h3 class="text-lg font-bold text-heading mb-2 card-title">Convolutional Neural Network (CNN / ConvNet)</h3>
+                        <p class="text-sm text-gray-600 mb-4 flex-grow">A Convolutional Neural Network (CNN or ConvNet) is a deep learning model designed to process data with grid-like structures, such as images. It uses convolutional layers to automatically detect features like edges, shapes, and textures, pooling layers to reduce dimensionality, and fully connected layers for classification. CNNs are widely used in image recognition, computer vision, and related tasks.</p>
                         <div class="flex items-center justify-between mt-auto">
                             <span class="text-xs text-gray-500">Dec 20, 2023</span>
-                            <a href="https://babin411.notion.site" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors">
+                            <a href="https://babin411.github.io/posts/Convolutinal-Neural-Network/" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors">
                                 View Page
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
@@ -172,6 +200,59 @@
                     </div>
                 </div>
 
+
+                <div class="blog-post bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up" data-category="machine-learning">
+                    <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-blue-500 to-teal-500 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                        </svg>
+                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">Deep Learning</span>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-lg font-bold text-heading mb-2 card-title">Back Propagation</h3>
+                        <p class="text-sm text-gray-600 mb-4 flex-grow">Backpropagation is a learning algorithm used in neural networks to minimize error by adjusting weights. It works by propagating the error from the output layer backward through the network, calculating gradients using the chain rule, and updating weights with optimization methods like gradient descent. This process allows the model to learn and improve accuracy over time.</p>
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xs text-gray-500">Dec 20, 2023</span>
+                            <a href="https://babin411.github.io/posts/Back-Propagation/" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors">
+                                View Page
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="blog-post bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up" data-category="machine-learning">
+                    <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-blue-500 to-teal-500 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                        </svg>
+                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">Deep Learning</span>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-lg font-bold text-heading mb-2 card-title">Artificial Neural Network (ANN / MLP)</h3>
+                        <p class="text-sm text-gray-600 mb-4 flex-grow">An Artificial Neural Network (ANN) is a computational model inspired by the way biological neural networks in the human brain process information. ANNs consist of interconnected layers of nodes (neurons) that work together to recognize patterns and make decisions. They are widely used in various applications, including image and speech recognition, natural language processing, and more.</p>
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xs text-gray-500">Dec 20, 2023</span>
+                            <a href="https://babin411.github.io/posts/Artificial-Neural-Network/" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors">
+                                View Page
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
                 <!-- Blog Post 3 -->
                 <div class="blog-post bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up" data-category="python">
                     <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center">
@@ -182,11 +263,11 @@
                         <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">Tutorial</span>
                     </div>
                     <div class="p-6 flex-grow flex flex-col">
-                        <h3 class="text-lg font-bold text-heading mb-2 card-title">Python for Data Analysis</h3>
-                        <p class="text-sm text-gray-600 mb-4 flex-grow">A comprehensive tutorial series covering Python libraries and techniques for effective data analysis and visualization.</p>
+                        <h3 class="text-lg font-bold text-heading mb-2 card-title">Python Decorators</h3>
+                        <p class="text-sm text-gray-600 mb-4 flex-grow">The post introduces how to wrap a function with additional behavior using decorators, without altering the original function’s code. It walks through creating wrapper functions via *args and **kwargs, stacking multiple decorators, handling methods (with self), and writing decorators that accept parameters. It also emphasizes keeping original function metadata using functools.wraps.</p>
                         <div class="flex items-center justify-between mt-auto">
                             <span class="text-xs text-gray-500">Nov 10, 2023</span>
-                            <a href="https://babin411.github.io" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors">
+                            <a href="https://babin411.github.io/posts/python9/" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors">
                                 Read More
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
@@ -198,22 +279,20 @@
                     </div>
                 </div>
 
-                <!-- Blog Post 4 -->
-                <div class="blog-post bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up" data-category="machine-learning">
-                    <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                <div class="blog-post bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up" data-category="python">
+                    <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="3"/>
-                            <path d="M12 1v6m0 6v6"/>
-                            <path d="m21 12-6 0m-6 0-6 0"/>
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
                         </svg>
-                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">Deep Learning</span>
+                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">Tutorial</span>
                     </div>
                     <div class="p-6 flex-grow flex flex-col">
-                        <h3 class="text-lg font-bold text-heading mb-2 card-title">Computer Vision with Deep Learning</h3>
-                        <p class="text-sm text-gray-600 mb-4 flex-grow">Exploring advanced computer vision techniques using deep learning frameworks and neural network architectures.</p>
+                        <h3 class="text-lg font-bold text-heading mb-2 card-title">Python Closures</h3>
+                        <p class="text-sm text-gray-600 mb-4 flex-grow">The post introduces how to wrap a function with additional behavior using decorators, without altering the original function’s code. It walks through creating wrapper functions via *args and **kwargs, stacking multiple decorators, handling methods (with self), and writing decorators that accept parameters. It also emphasizes keeping original function metadata using functools.wraps.</p>
                         <div class="flex items-center justify-between mt-auto">
-                            <span class="text-xs text-gray-500">Oct 5, 2023</span>
-                            <a href="https://babin411.github.io" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors">
+                            <span class="text-xs text-gray-500">Nov 10, 2023</span>
+                            <a href="https://babin411.github.io/posts/python9/" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors">
                                 Read More
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
@@ -225,18 +304,44 @@
                     </div>
                 </div>
 
+                <div class="blog-post bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up" data-category="python">
+                    <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                        </svg>
+                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">Tutorial</span>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-lg font-bold text-heading mb-2 card-title">Python Generators</h3>
+                        <p class="text-sm text-gray-600 mb-4 flex-grow">The post explains how generators in Python simplify iterator creation using the yield keyword, preserving function state between calls. It distinguishes generators from normal functions, shows how to build them (including generator expressions), and highlights benefits like memory efficiency and ability to represent infinite streams.</p>
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xs text-gray-500">Nov 10, 2023</span>
+                            <a href="https://babin411.github.io/posts/python7/" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors">
+                                Read More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
                 <!-- Blog Post 5 -->
-                <div class="blog-post bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up" data-category="cloud">
+                <div class="blog-post bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up" data-category="aws">
                     <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
                             <circle cx="12" cy="12" r="4"/>
                         </svg>
-                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">Cloud</span>
+                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">Lambda</span>
                     </div>
                     <div class="p-6 flex-grow flex flex-col">
-                        <h3 class="text-lg font-bold text-heading mb-2 card-title">Cloud Data Architecture</h3>
-                        <p class="text-sm text-gray-600 mb-4 flex-grow">Designing scalable data architectures in the cloud with AWS, Azure, and GCP for modern data-driven applications.</p>
+                        <h3 class="text-lg font-bold text-heading mb-2 card-title">AWS Lambda</h3>
+                        <p class="text-sm text-gray-600 mb-4 flex-grow">AWS Lambda is a serverless compute service that runs code in response to events without needing to manage servers. It automatically scales, supports multiple programming languages, and charges only for the execution time used.</p>
                         <div class="flex items-center justify-between mt-auto">
                             <span class="text-xs text-gray-500">Sep 18, 2023</span>
                             <a href="https://babin411.github.io" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors">
@@ -251,19 +356,20 @@
                     </div>
                 </div>
 
-                <!-- Blog Post 6 -->
-                <div class="blog-post bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up" data-category="data-engineering">
-                    <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-yellow-500 to-orange-500 flex items-center justify-center">
+
+                <div class="blog-post bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up" data-category="aws">
+                    <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <circle cx="12" cy="12" r="4"/>
                         </svg>
-                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">Tips</span>
+                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">Glue</span>
                     </div>
                     <div class="p-6 flex-grow flex flex-col">
-                        <h3 class="text-lg font-bold text-heading mb-2 card-title">Data Quality and Validation</h3>
-                        <p class="text-sm text-gray-600 mb-4 flex-grow">Essential practices for ensuring data quality and implementing robust validation frameworks in data pipelines.</p>
+                        <h3 class="text-lg font-bold text-heading mb-2 card-title">AWS Glue</h3>
+                        <p class="text-sm text-gray-600 mb-4 flex-grow">AWS Glue is a serverless data integration service that helps discover, catalog, clean, and transform data from multiple sources. It supports ETL and ELT processes, automates resource management, and scales as needed, making it easier to prepare data for analytics and machine learning.</p>
                         <div class="flex items-center justify-between mt-auto">
-                            <span class="text-xs text-gray-500">Aug 25, 2023</span>
+                            <span class="text-xs text-gray-500">Sep 18, 2023</span>
                             <a href="https://babin411.github.io" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors">
                                 Read More
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -276,19 +382,20 @@
                     </div>
                 </div>
 
-                <!-- Blog Post 7 -->
-                <div class="blog-post bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up" data-category="data-engineering">
-                    <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-red-500 to-pink-500 flex items-center justify-center">
+
+                <div class="blog-post bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up" data-category="azure">
+                    <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <circle cx="12" cy="12" r="4"/>
                         </svg>
-                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">Tools</span>
+                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">azure</span>
                     </div>
                     <div class="p-6 flex-grow flex flex-col">
-                        <h3 class="text-lg font-bold text-heading mb-2 card-title">Essential Data Engineering Tools</h3>
-                        <p class="text-sm text-gray-600 mb-4 flex-grow">A comprehensive overview of must-have tools and technologies for modern data engineering workflows.</p>
+                        <h3 class="text-lg font-bold text-heading mb-2 card-title">Microsoft Azure for Data Engineering</h3>
+                        <p class="text-sm text-gray-600 mb-4 flex-grow">Microsoft Azure is a cloud computing platform and service created by Microsoft. It provides a range of cloud services, including those for computing, analytics, storage, and networking. Users can choose and configure these services to meet their specific needs.</p>
                         <div class="flex items-center justify-between mt-auto">
-                            <span class="text-xs text-gray-500">Jul 12, 2023</span>
+                            <span class="text-xs text-gray-500">Sep 18, 2023</span>
                             <a href="https://babin411.github.io" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors">
                                 Read More
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -301,62 +408,8 @@
                     </div>
                 </div>
 
-                <!-- Blog Post 8 -->
-                <div class="blog-post bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up" data-category="career">
-                    <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-teal-500 to-green-500 flex items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
-                            <line x1="16" y1="2" x2="16" y2="6"/>
-                            <line x1="8" y1="2" x2="8" y2="6"/>
-                            <line x1="3" y1="10" x2="21" y2="10"/>
-                        </svg>
-                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">Career</span>
-                    </div>
-                    <div class="p-6 flex-grow flex flex-col">
-                        <h3 class="text-lg font-bold text-heading mb-2 card-title">Building a Data Engineering Career</h3>
-                        <p class="text-sm text-gray-600 mb-4 flex-grow">Personal insights and practical advice on building a successful career in data engineering and technology.</p>
-                        <div class="flex items-center justify-between mt-auto">
-                            <span class="text-xs text-gray-500">Jun 28, 2023</span>
-                            <a href="https://babin411.github.io" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors">
-                                Read More
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                                    <polyline points="15 3 21 3 21 9"/>
-                                    <line x1="10" y1="14" x2="21" y2="3"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Blog Post 9 -->
-                <div class="blog-post bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up" data-category="data-engineering">
-                    <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-gray-500 to-gray-700 flex items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M9 12l2 2 4-4"/>
-                            <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"/>
-                            <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"/>
-                            <path d="M13 7h3a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-3"/>
-                            <path d="M11 17H8a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h3"/>
-                        </svg>
-                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">DevOps</span>
-                    </div>
-                    <div class="p-6 flex-grow flex flex-col">
-                        <h3 class="text-lg font-bold text-heading mb-2 card-title">DataOps and MLOps Best Practices</h3>
-                        <p class="text-sm text-gray-600 mb-4 flex-grow">Implementing DevOps principles in data and machine learning workflows for better collaboration and reliability.</p>
-                        <div class="flex items-center justify-between mt-auto">
-                            <span class="text-xs text-gray-500">May 15, 2023</span>
-                            <a href="https://babin411.github.io" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors">
-                                Read More
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                                    <polyline points="15 3 21 3 21 9"/>
-                                    <line x1="10" y1="14" x2="21" y2="3"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+
 
                 <!-- Blog Post 10 - SQL Category -->
                 <div class="blog-post bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up" data-category="sql">
@@ -367,11 +420,11 @@
                         <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">SQL</span>
                     </div>
                     <div class="p-6 flex-grow flex flex-col">
-                        <h3 class="text-lg font-bold text-heading mb-2 card-title">Advanced SQL Techniques for Data Analysis</h3>
-                        <p class="text-sm text-gray-600 mb-4 flex-grow">Mastering complex SQL queries, window functions, and optimization techniques for efficient data analysis and reporting.</p>
+                        <h3 class="text-lg font-bold text-heading mb-2 card-title">Comprehensive SQL Learning Guide: From Fundamentals to Advanced Concepts</h3>
+                        <p class="text-sm text-gray-600 mb-4 flex-grow">This resource provides a structured journey through SQL, starting with the basics of relational databases and SQL Server, and progressing to advanced topics like triggers, stored procedures, and performance optimization. It covers essential concepts such as database design, time-series analysis, functions for data manipulation, error handling, and indexing. In addition to SQL Server, it also touches on PostgreSQL-specific techniques, making it a versatile reference for learners and professionals aiming to strengthen their database skills.</p>
                         <div class="flex items-center justify-between mt-auto">
                             <span class="text-xs text-gray-500">Apr 10, 2023</span>
-                            <a href="https://babin411.github.io" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors">
+                            <a href="https://babin411.notion.site/SQL-55a35bda3bf149dbaf7388312e666e98" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors">
                                 Read More
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
@@ -390,14 +443,14 @@
                             <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
                             <polyline points="14 2 14 8 20 8"/>
                         </svg>
-                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">Notion</span>
+                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">Databricks</span>
                     </div>
                     <div class="p-6 flex-grow flex flex-col">
-                        <h3 class="text-lg font-bold text-heading mb-2 card-title">My Data Engineering Journey</h3>
-                        <p class="text-sm text-gray-600 mb-4 flex-grow">Personal thoughts and experiences in my journey as a data engineer, including challenges, learnings, and career insights.</p>
+                        <h3 class="text-lg font-bold text-heading mb-2 card-title">Databricks Data Engineer Associate</h3>
+                        <p class="text-sm text-gray-600 mb-4 flex-grow">Databricks is a cloud-based data platform that unifies data engineering, data science, and machine learning on a single collaborative workspace. Built on Apache Spark, it enables large-scale data processing, real-time analytics, and AI development while supporting multiple languages like Python, SQL, R, and Scala. It also integrates with Delta Lake for reliable data storage and supports the Medallion Architecture for building scalable data pipelines.</p>
                         <div class="flex items-center justify-between mt-auto">
                             <span class="text-xs text-gray-500">Mar 22, 2023</span>
-                            <a href="https://babin411.notion.site" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors">
+                            <a href="https://babin411.notion.site/Databricks-Certified-Data-Engineer-Associate-c641116c378342bb81caeb392f269d68" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors">
                                 View Page
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
@@ -408,32 +461,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Blog Post 12 - SQL Category -->
-                <div class="blog-post bg-card rounded-xl shadow-subtle card-hover h-full flex flex-col slide-up" data-category="sql">
-                    <div class="relative h-48 rounded-t-xl overflow-hidden bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-                        </svg>
-                        <span class="absolute top-4 right-4 bg-white/20 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-full">Performance</span>
-                    </div>
-                    <div class="p-6 flex-grow flex flex-col">
-                        <h3 class="text-lg font-bold text-heading mb-2 card-title">SQL Performance Optimization</h3>
-                        <p class="text-sm text-gray-600 mb-4 flex-grow">Comprehensive guide to optimizing SQL queries for better performance, including indexing strategies and query plan analysis.</p>
-                        <div class="flex items-center justify-between mt-auto">
-                            <span class="text-xs text-gray-500">Feb 15, 2023</span>
-                            <a href="https://babin411.github.io" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors">
-                                Read More
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                                    <polyline points="15 3 21 3 21 9"/>
-                                    <line x1="10" y1="14" x2="21" y2="3"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
             </div>
 
             <!-- Back to Home Button -->
