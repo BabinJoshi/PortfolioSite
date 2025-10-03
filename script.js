@@ -967,13 +967,13 @@ function initProjectsCarousel() {
     nextBtn.addEventListener('click', nextSlide);
     prevBtn.addEventListener('click', prevSlide);
     
-    // Auto-play (optional) - less frequent than blogs
-    let autoPlay = setInterval(nextSlide, 7000);
+    // Auto-play (optional) - matching blog carousel timing
+    let autoPlay = setInterval(nextSlide, 5000);
     
     // Pause auto-play on hover
     carousel.addEventListener('mouseenter', () => clearInterval(autoPlay));
     carousel.addEventListener('mouseleave', () => {
-        autoPlay = setInterval(nextSlide, 7000);
+        autoPlay = setInterval(nextSlide, 5000);
     });
     
     // Handle resize

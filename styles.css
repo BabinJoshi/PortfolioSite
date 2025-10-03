@@ -765,3 +765,28 @@ input:focus, textarea:focus {
 #blog-prev:hover, #blog-next:hover {
     transform: translateY(-50%) scale(1.1);
 }
+
+/* Projects carousel styling - matching blog carousel */
+#projects-carousel {
+    position: relative;
+}
+
+#projects-track {
+    will-change: transform;
+}
+
+/* Responsive adjustments for projects */
+@media (max-width: 768px) {
+    #projects-prev, #projects-next {
+        display: none;
+    }
+    
+    #projects-carousel {
+        margin: 0;
+    }
+}
+
+/* Smooth transitions for projects carousel buttons */
+#projects-prev:hover, #projects-next:hover {
+    transform: translateY(-50%) scale(1.1);
+}
