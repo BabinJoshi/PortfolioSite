@@ -982,3 +982,85 @@ function initProjectsCarousel() {
     // Initialize
     updateCardsPerView();
 }
+
+// Search Functionality for Projects and Blogs
+function initSearch() {
+    // Project Search
+    const projectSearchInput = document.getElementById('project-search');
+    if (projectSearchInput) {
+        let searchTimeout;
+        projectSearchInput.addEventListener('input', (e) => {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(() => {
+                searchProjects(e.target.value.toLowerCase());
+            }, 300); // Debounce search for better performance
+        });
+    }
+
+    // Blog Search
+    const blogSearchInput = document.getElementById('blog-search');
+    if (blogSearchInput) {
+        let searchTimeout;
+        blogSearchInput.addEventListener('input', (e) => {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(() => {
+                searchBlogs(e.target.value.toLowerCase());
+            }, 300); // Debounce search for better performance
+        });
+    }
+}
+
+function searchProjects(searchTerm) {
+    const projects = document.querySelectorAll('.project-post');
+    const activeCategory = document.querySelector('.project-filter-btn.active')?.getAttribute('data-category') || 'all';
+    
+    projects.forEach(project => {
+        const projectTitle = project.querySelector('.card-title')?.textContent.toLowerCase() || '';
+        const projectDescription = project.querySelector('p')?.textContent.toLowerCase() || '';
+        const projectCategory = project.getAttribute('data-category');
+        
+        // Check if project matches search term and current category filter
+        const matchesSearch = searchTerm === '' || 
+                            projectTitle.includes(searchTerm) || 
+                            projectDescription.includes(searchTerm);
+        const matchesCategory = activeCategory === 'all' || projectCategory === activeCategory;
+        
+        if (matchesSearch && matchesCategory) {
+            project.style.display = 'flex';
+            setTimeout(() => project.classList.add('visible'), 10);
+        } else {
+            project.classList.remove('visible');
+            setTimeout(() => project.style.display = 'none', 300);
+        }
+    });
+}
+
+function searchBlogs(searchTerm) {
+    const blogs = document.querySelectorAll('.blog-post');
+    const activeCategory = document.querySelector('.blog-filter-btn.active')?.getAttribute('data-category') || 'all';
+    
+    blogs.forEach(blog => {
+        const blogTitle = blog.querySelector('.card-title')?.textContent.toLowerCase() || '';
+        const blogDescription = blog.querySelector('p')?.textContent.toLowerCase() || '';
+        const blogCategory = blog.getAttribute('data-category');
+        
+        // Check if blog matches search term and current category filter
+        const matchesSearch = searchTerm === '' || 
+                            blogTitle.includes(searchTerm) || 
+                            blogDescription.includes(searchTerm);
+        const matchesCategory = activeCategory === 'all' || blogCategory === activeCategory;
+        
+        if (matchesSearch && matchesCategory) {
+            blog.style.display = 'flex';
+            setTimeout(() => blog.classList.add('visible'), 10);
+        } else {
+            blog.classList.remove('visible');
+            setTimeout(() => blog.style.display = 'none', 300);
+        }
+    });
+}
+
+// Initialize search functionality when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    initSearch();
+});

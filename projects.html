@@ -88,6 +88,24 @@
                     Explore my complete portfolio of machine learning, computer vision, and data engineering projects
                 </p>
                 
+                <!-- Search Box -->
+                <div class="max-w-md mx-auto mb-8">
+                    <div class="relative">
+                        <input 
+                            type="text" 
+                            id="project-search"
+                            placeholder="Search projects..." 
+                            class="w-full px-4 py-3 pl-12 pr-4 text-gray-700 bg-white border-2 border-gray-200 rounded-xl focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent focus:ring-opacity-20 transition-all duration-300"
+                        >
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400">
+                                <circle cx="11" cy="11" r="8"/>
+                                <path d="M21 21l-4.35-4.35"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                
                 <!-- Category Filter Navigation -->
                 <div class="flex flex-wrap justify-center gap-3 mb-8">
                     <button class="project-filter-btn active bg-accent text-white px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:bg-accent-hover" data-category="all">
@@ -603,11 +621,23 @@
                     button.classList.add('active', 'bg-accent', 'text-white');
                     button.classList.remove('bg-gray-100', 'text-gray-700');
                     
-                    // Filter projects with animation
+                    // Get current search term
+                    const searchInput = document.getElementById('project-search');
+                    const searchTerm = searchInput ? searchInput.value.toLowerCase() : '';
+                    
+                    // Filter projects with animation considering both category and search
                     projectPosts.forEach(post => {
-                        if (category === 'all' || post.getAttribute('data-category') === category) {
+                        const projectTitle = post.querySelector('.card-title')?.textContent.toLowerCase() || '';
+                        const projectDescription = post.querySelector('p')?.textContent.toLowerCase() || '';
+                        const projectCategory = post.getAttribute('data-category');
+                        
+                        const matchesCategory = category === 'all' || projectCategory === category;
+                        const matchesSearch = searchTerm === '' || 
+                                            projectTitle.includes(searchTerm) || 
+                                            projectDescription.includes(searchTerm);
+                        
+                        if (matchesCategory && matchesSearch) {
                             post.style.display = 'flex';
-                            // Trigger animation
                             setTimeout(() => {
                                 post.classList.add('visible');
                             }, 10);
