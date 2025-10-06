@@ -901,6 +901,8 @@ function initProjectsCarousel() {
     let currentIndex = 0;
     let cardsPerView = 3;
     
+    console.log('Total project cards found:', cards.length);
+    
     // Responsive cards per view
     function updateCardsPerView() {
         if (window.innerWidth < 768) {
@@ -916,8 +918,12 @@ function initProjectsCarousel() {
     
     // Create indicators
     function createIndicators() {
+        if (!indicatorsContainer) return;
+        
         const totalSlides = Math.ceil(cards.length / cardsPerView);
         indicatorsContainer.innerHTML = '';
+        
+        console.log('Total slides:', totalSlides, 'Cards per view:', cardsPerView);
         
         for (let i = 0; i < totalSlides; i++) {
             const indicator = document.createElement('button');
@@ -930,22 +936,29 @@ function initProjectsCarousel() {
     
     // Update carousel position
     function updateCarousel() {
+        // Calculate the width percentage each card should take
         const cardWidth = 100 / cardsPerView;
-        const translateX = -(currentIndex * cardWidth);
+        // Translate by the current index times full viewport (100%)
+        const translateX = -(currentIndex * 100);
         track.style.transform = `translateX(${translateX}%)`;
         
+        console.log('Current index:', currentIndex, 'TranslateX:', translateX + '%', 'Card width:', cardWidth + '%');
+        
         // Update indicators
-        const indicators = indicatorsContainer.querySelectorAll('button');
-        indicators.forEach((indicator, index) => {
-            indicator.classList.toggle('bg-accent', index === currentIndex);
-            indicator.classList.toggle('bg-gray-300', index !== currentIndex);
-        });
+        if (indicatorsContainer) {
+            const indicators = indicatorsContainer.querySelectorAll('button');
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('bg-accent', index === currentIndex);
+                indicator.classList.toggle('bg-gray-300', index !== currentIndex);
+            });
+        }
     }
     
     // Go to specific slide
     function goToSlide(index) {
         const maxIndex = Math.ceil(cards.length / cardsPerView) - 1;
         currentIndex = Math.max(0, Math.min(index, maxIndex));
+        console.log('Go to slide:', currentIndex, 'Max index:', maxIndex);
         updateCarousel();
     }
     
@@ -953,6 +966,7 @@ function initProjectsCarousel() {
     function nextSlide() {
         const maxIndex = Math.ceil(cards.length / cardsPerView) - 1;
         currentIndex = currentIndex >= maxIndex ? 0 : currentIndex + 1;
+        console.log('Next slide. New index:', currentIndex, 'Max:', maxIndex);
         updateCarousel();
     }
     
@@ -960,6 +974,7 @@ function initProjectsCarousel() {
     function prevSlide() {
         const maxIndex = Math.ceil(cards.length / cardsPerView) - 1;
         currentIndex = currentIndex <= 0 ? maxIndex : currentIndex - 1;
+        console.log('Previous slide. New index:', currentIndex, 'Max:', maxIndex);
         updateCarousel();
     }
     
